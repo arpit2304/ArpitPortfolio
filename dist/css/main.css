@@ -321,7 +321,7 @@ main#home h1 {
 }
 
 .fa-mobile-alt:hover {
-  color: rgb(95, 226, 95);
+  color: rgb(47, 185, 47);
 }
 
 .nav-list {
@@ -415,8 +415,8 @@ main#home h1 {
     grid-template-columns: 1fr;
   }
   iframe {
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 350px;
   }
 }
 
