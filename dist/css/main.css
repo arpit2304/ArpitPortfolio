@@ -294,10 +294,24 @@ main#home h1 {
   display: grid;
   width: 100%;
   height: 100%;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'linkedin github gmail instagram';
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+.github {
+  grid-area: github;
+}
+.gmail {
+  grid-area: gmail;
+}
+.instagram {
+  grid-area: instagram;
 }
 
 #main-footer {
@@ -358,15 +372,15 @@ main#home h1 {
     height: 150px;
   }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'free' 'job1' 'job2';
     grid-template-columns: 1fr;
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  .nav-list,
-  .social {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-list {
+    grid-template-areas: 'linkedin' 'github' 'gmail' 'instagram';
+    grid-template-columns: 1fr;
   }
 }
 
@@ -384,8 +398,7 @@ main#home h1 {
   .projects {
     grid-template-columns: 1fr;
   }
-  .nav-list,
-  .social {
+  .nav-list {
     grid-template-columns: 1fr;
   }
 }
