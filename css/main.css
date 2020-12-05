@@ -136,6 +136,10 @@ body#bg-img {
   background-attachment: fixed;
   background-size: cover;
 }
+.heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+}
 
 h1,
 h2,
@@ -220,8 +224,8 @@ main#home h1 {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
+  border-radius: 20px;
 }
-
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -458,7 +462,7 @@ main#home h1 {
   }
   main .lg-heading {
     margin-top: 1rem;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .projects {
     grid-template-columns: 1fr;
