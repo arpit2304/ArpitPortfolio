@@ -69,7 +69,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url('../img/portrait.jpg');
+  background: url('../img/arpit.jpg');
   border-radius: 50%;
   border: solid 3px #eece1a;
 }
@@ -184,10 +184,7 @@ main .icons {
 main .icons a {
   padding: 0.4rem;
 }
-/* main .icons a:hover {
-  color: #eece1a;
-  transition: all 0.5s ease-out;
-} */
+
 main#home {
   overflow: hidden;
 }
@@ -204,6 +201,8 @@ main#home h1 {
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
+  width: 250px;
+  height: 300px;
   border-radius: 50%;
   border: #eece1a 3px solid;
 }
@@ -358,6 +357,25 @@ main#home h1 {
   height: 60px;
 }
 
+.home {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background-color: #eee;
+  top: -2.5rem;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.home i {
+  color: black;
+  font-size: 2rem;
+  margin: auto;
+}
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr);
@@ -399,10 +417,18 @@ main#home h1 {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url('../img/portrait_small.jpg');
+    background: url('../img/arpit_small.jpg');
     width: 150px;
     height: 150px;
   }
+
+  body#bg-img {
+    background: url(../img/backgroundMini.jpg);
+    background: rgba(68, 68, 68, 0.9), url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'free' 'job1' 'job2';
     grid-template-columns: 1fr;
@@ -417,6 +443,9 @@ main#home h1 {
   iframe {
     height: 500px;
     width: 350px;
+  }
+  .home {
+    right: 2rem;
   }
 }
 
