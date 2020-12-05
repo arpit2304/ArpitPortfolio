@@ -422,12 +422,12 @@ main#home h1 {
     height: 150px;
   }
 
-  /* body#bg-img {
+  body#bg-img {
     background: url(../img/background.jpg);
     background: rgba(68, 68, 68, 0.9), url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover;
-  } */
+  }
 
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'free' 'job1' 'job2';
