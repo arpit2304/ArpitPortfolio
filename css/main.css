@@ -123,19 +123,21 @@
 }
 
 body {
-  background: #444;
-  color: #fff;
+  /* background: #444; */
+  /* color: #fff; */
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
 }
-body#bg-img {
+/* body#bg-img {
   background: url(../img/background.jpg);
   background: rgba(68, 68, 68, 0.9), url(../img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
-}
+} */
 .heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
