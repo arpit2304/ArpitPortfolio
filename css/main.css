@@ -148,6 +148,7 @@ h3.lg-heading {
   font-size: 6rem;
   color: #66fcf1;
 }
+
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
@@ -182,7 +183,12 @@ main .icons {
   margin-top: 1rem;
 }
 main .icons a {
-  padding: 0.4rem;
+  padding: 0.6rem;
+}
+
+main .icons a:hover {
+  transform: scale(1.5);
+  transition: 0.8s;
 }
 
 main#home {
@@ -232,9 +238,14 @@ h5 {
   border-bottom: #0b0c10 5px solid;
   border-radius: 20px;
 }
+
+.about-info .job:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -271,6 +282,11 @@ h5 {
 .btn-light {
   background: #c4c4c4;
   color: #333;
+}
+
+.projects .item:hover {
+  transform: scale(1.1);
+  transition: 0.8s;
 }
 
 .resume {
@@ -444,12 +460,20 @@ h5 {
     grid-template-areas: 'bioimage' 'bio' 'free' 'job1' 'job2';
     grid-template-columns: 1fr;
   }
+  .about-info .job:hover {
+    transform: scale(1.1);
+    /* transition: 0.8s; */
+  }
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
   .nav-list {
     grid-template-areas: 'linkedin' 'github' 'gmail' 'instagram' 'call';
     grid-template-columns: 1fr;
+  }
+  .projects .item:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
   }
   iframe {
     height: 500px;
