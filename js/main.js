@@ -32,6 +32,26 @@ function toggleMenu() {
   }
 }
 
+// function type(n, t) {
+//   var str = document.getElementsByTagName("anmtn")[n].innerHTML.toString();
+//   var i = 0;
+//   document.getElementsByTagName("anmtn")[n].innerHTML = "";
+
+//   setTimeout(function() {
+//       var se = setInterval(function() {
+//           i++;
+//           document.getElementsByTagName("anmtn")[n].innerHTML =
+//               str.slice(0, i) + "|";
+//           if (i == str.length) {
+//               clearInterval(se);
+//               document.getElementsByTagName("anmtn")[n].innerHTML = str;
+//           }
+//       }, 20);
+//   }, t);
+// }
+
+// type(0, 1500);
+
 AOS.init({
   easing: 'ease',
   duration: 1800
