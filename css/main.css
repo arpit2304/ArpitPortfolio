@@ -355,8 +355,8 @@ h5 {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-areas: 'linkedin github gmail instagram call';
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 'linkedin github gmail instagram';
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .linkedin {
@@ -371,9 +371,9 @@ h5 {
 .instagram {
   grid-area: instagram;
 }
-.call {
+/* .call {
   grid-area: call;
-}
+} */
 
 #main-footer {
   text-align: center;
@@ -468,7 +468,7 @@ h5 {
     grid-template-columns: repeat(2, 1fr);
   }
   .nav-list {
-    grid-template-areas: 'linkedin' 'github' 'gmail' 'instagram' 'call';
+    grid-template-areas: 'linkedin' 'github' 'gmail' 'instagram';
     grid-template-columns: 1fr;
   }
   .projects .item:hover {
